@@ -146,7 +146,7 @@
             %th.variant{ 'ng-show' => 'columns.variant.visible' }
               %a{ :href => '', 'ng-click' => "predicate = 'units_variant.full_name'; reverse = !reverse" } Product: Unit
             %th.quantity{ 'ng-show' => 'columns.quantity.visible' }
-              = t "products_quantity"
+              = t("products_quantity").upcase
             %th.max{ 'ng-show' => 'columns.max.visible' }
               = t "shop_variant_quantity_max"
             %th.final_weight_volume{ 'ng-show' => 'columns.final_weight_volume.visible' }
