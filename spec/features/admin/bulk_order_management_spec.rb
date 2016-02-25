@@ -71,13 +71,13 @@ feature %q{
       end
 
       it "displays a field for quantity" do
-        expect(page).to have_selector "th.quantity", text: "QUANTITY", :visible => true
+        expect(page).to have_selector "th.quantity a", text: "QUANTITY", :visible => true
         expect(page).to have_field "quantity", with: li1.quantity.to_s, :visible => true
         expect(page).to have_field "quantity", with: li2.quantity.to_s, :visible => true
       end
 
       it "displays a column for max quantity" do
-        expect(page).to have_selector "th.max", text: "MAX", :visible => true
+        expect(page).to have_selector "th.max a", text: "MAX", :visible => true
         expect(page).to have_selector "td.max", text: li1.max_quantity.to_s, :visible => true
         expect(page).to have_selector "td.max", text: li2.max_quantity.to_s, :visible => true
       end

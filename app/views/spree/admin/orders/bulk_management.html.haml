@@ -136,23 +136,28 @@
               %a{ :href => '', 'ng-click' => "predicate = 'order.phone'; reverse = !reverse" }
                 = t "phone"
             %th.date{ 'ng-show' => 'columns.order_date.visible' }
-              %a{ :href => '', 'ng-click' => "predicate = 'order.completed_at'; reverse = !reverse" } Order Date
+              %a{ :href => '', 'ng-click' => "predicate = 'order.completed_at'; reverse = !reverse" }
+                = t "bom_date"
             %th.producer{ 'ng-show' => 'columns.producer.visible' }
-              %a{ :href => '', 'ng-click' => "predicate = 'supplier.name'; reverse = !reverse" } Producer
+              %a{ :href => '', 'ng-click' => "predicate = 'supplier.name'; reverse = !reverse" }
+                = t "producer"
             %th.order_cycle{ 'ng-show' => 'columns.order_cycle.visible' }
-              %a{ :href => '', 'ng-click' => "predicate = 'order.order_cycle.name'; reverse = !reverse" } Order Cycle
+              %a{ :href => '', 'ng-click' => "predicate = 'order.order_cycle.name'; reverse = !reverse" }
+                = t "bom_cycle"
             %th.hub{ 'ng-show' => 'columns.hub.visible' }
-              %a{ :href => '', 'ng-click' => "predicate = 'order.distributor.name'; reverse = !reverse" } Hub
+              %a{ :href => '', 'ng-click' => "predicate = 'order.distributor.name'; reverse = !reverse" }
+                = t "hub"
             %th.variant{ 'ng-show' => 'columns.variant.visible' }
-              %a{ :href => '', 'ng-click' => "predicate = 'units_variant.full_name'; reverse = !reverse" } Product: Unit
+              %a{ :href => '', 'ng-click' => "predicate = 'units_variant.full_name'; reverse = !reverse" }
+                = t "bom_variant"
             %th.quantity{ 'ng-show' => 'columns.quantity.visible' }
-              = t("products_quantity").upcase
+              = t "products_quantity"
             %th.max{ 'ng-show' => 'columns.max.visible' }
               = t "shop_variant_quantity_max"
             %th.final_weight_volume{ 'ng-show' => 'columns.final_weight_volume.visible' }
               = t "weight_volume"
             %th.price{ 'ng-show' => 'columns.price.visible' }
-              = t "products_price"
+              = t "price"
             %th.actions
             %th.actions
               = t "ask"
