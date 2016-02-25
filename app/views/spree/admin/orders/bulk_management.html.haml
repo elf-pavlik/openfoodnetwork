@@ -4,7 +4,7 @@
 - content_for :page_title do
   %h1.page-title
     = t "bulk_order_management"
-  %a{ 'ofn-with-tip' => "Use this page to alter product quantities across multiple orders. Products may also be removed from orders entirely, if required." } What's this?
+  %a{ 'ofn-with-tip' => "Use this page to alter product quantities across multiple orders. Products may also be removed from orders entirely, if required." }
     = t "admin_entreprise_groups_what_s_this"
   %h1.page-title Bulk Order Management
 
@@ -60,7 +60,7 @@
     .row
       .one.column.alpha &nbsp;
       .two.columns
-        %span.two.columns 
+        %span.two.columns
           = t "group_buy_unit_size"
         %span.two.columns {{ formattedValueWithUnitName( selectedUnitsProduct.group_buy_unit_size, selectedUnitsProduct, selectedUnitsVariant ) }}
       .one.column &nbsp;
